@@ -1,0 +1,342 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #333 !important;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+
+.map-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.map-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.auth-container h2 {
+    text-align: center;
+}
+
+.auth-container form div {
+    margin-bottom: 15px;
+}
+
+.auth-container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-container form input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.auth-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-container form button:hover {
+    background-color: #0056b3;
+}
+
+.booked-date {
+    background-color: #ff6b6b !important;
+    color: white !important;
+    border-radius: 50%;
+  }
+  
+.calendar-container {
+    margin: 20px;
+  }
+
+.calendar-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }  
+  
+.card {
+    margin-bottom: 20px;
+  }
+  
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+.active {
+    font-weight: bold;
+    color: #007bff;
+  }   */
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #333 !important;
+    margin-right: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Card Style */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+/* Map Section */
+.map-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+.map-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Authentication Forms */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-container form div {
+    margin-bottom: 15px;
+}
+
+.auth-container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.auth-container form input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.auth-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-container form button:hover {
+    background-color: #0056b3;
+}
+
+/* Calendar Styles */
+.booked-date {
+    background-color: #ff6b6b !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+.calendar-container {
+    margin: 20px;
+}
+
+.calendar-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Enhancements for a Professional Look */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.active {
+    font-weight: bold;
+    color: #007bff;
+}
