@@ -1,16 +1,27 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import axios for API calls
 
 const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your sign-in logic here, e.g., call an API to authenticate the user
-    // On successful sign-in, navigate to the dashboard or home page
-    navigate('/');
+    try {
+      // API call to authenticate the user
+      const response = await axios.post('/api/users/signin', { email, password });
+      
+      // Store the received token in local storage
+      localStorage.setItem('token', response.data.token);
+      
+      // Navigate to the dashboard or home page after successful sign-in
+      navigate('/');
+    } catch (error) {
+      console.error('Error signing in:', error);
+      alert('Invalid credentials. Please try again.');
+    }
   };
 
   return (

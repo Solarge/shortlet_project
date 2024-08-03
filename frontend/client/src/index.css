@@ -241,6 +241,11 @@ footer {
     background-color: #0056b3;
 }
 
+.btn-primary:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
 /* Footer */
 footer {
     padding: 10px 0;
@@ -326,17 +331,124 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Enhancements for a Professional Look */
-.card {
-    margin-bottom: 20px;
+/* Contact Container */
+.contact-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
+.contact-container h2, .company-info h3 {
+    text-align: center;
 }
 
-.active {
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
     font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.company-info {
+    margin-top: 30px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
     color: #007bff;
 }
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Review Slider */
+.review-slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.review {
+    padding: 20px;
+}
+
+.review-text {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.review-author {
+    font-weight: bold;
+}
+.brick-buffer {
+    background-color: #33d21e; /* A brick-like color */
+    background-image: linear-gradient(135deg, #46ca4d 25%, transparent 25%),
+                      linear-gradient(225deg, #28a70e 25%, transparent 25%),
+                      linear-gradient(45deg, #29b60d 25%, transparent 25%),
+                      linear-gradient(315deg, #23c414 25%, #42d834 25%);
+    background-position: 10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    color: white;
+    cursor: not-allowed;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .brick-buffer:hover {
+    background-color: #36dd4c; /* Maintain the same color on hover */
+  }
