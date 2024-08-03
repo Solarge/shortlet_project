@@ -31,7 +31,7 @@ import '../index.css'; // Import the CSS file
 const ApartmentsComponent = () => {
   return (
     <div className="container mt-5">
-      <h1>Available Apartments</h1>
+      <h2>Available Apartments</h2>
       <div className="apartment-list">
         {Apartments.map(apartment => (
           <div key={apartment.id} className="apartment-item">

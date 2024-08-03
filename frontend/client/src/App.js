@@ -21,6 +21,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/mapComponent" element={<MapComponent />} /> {/* Example route for map */}
+        <Route path="/apartment/:id" element={<ApartmentDetail />} /> {/* Route for detailed view */}
         
       </Routes>
     </Router>
