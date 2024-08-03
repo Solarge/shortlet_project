@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -7,15 +8,23 @@ const SignUp = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your sign-up logic here, e.g., call an API to register the user
+
     if (password !== confirmPassword) {
       alert('Passwords do not match');
       return;
     }
-    // On successful sign-up, navigate to the sign-in page or dashboard
-    navigate('/signin');
+
+    try {
+      // API call to register the user
+      await axios.post('/api/users/signup', { email, password });
+      // On successful sign-up, navigate to the sign-in page or another page
+      navigate('/signin');
+    } catch (error) {
+      console.error('Error signing up:', error);
+      alert('Error signing up. Please try again.');
+    }
   };
 
   return (

@@ -23,9 +23,7 @@ const CustomNavbar = () => {
             <Nav.Link as={NavLink} to="/signin" activeClassName="active">
               Sign In
             </Nav.Link>
-            <Nav.Link as={NavLink} to="#contact" activeClassName="active">
-              Contact
-            </Nav.Link>
+            <Nav.Link as={NavLink} to="/contact">Contact Us</Nav.Link> {/* Add Contact Us link */}
           </Nav>
         </Navbar.Collapse>
       </Container>

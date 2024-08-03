@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const db = 'your_mongodb_connection_string_here';
+const db = 'mongodb+srv://asolaja:YNhAS7KdOIqGKY7R@devcluster.beunkb5.mongodb.net/';
 
 const connectDB = async () => {
   try {
